@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Résumé of Samoria Morris, software developer candidate with experience in AI model QA, testing, and technical writing.">
+    <meta name="description" content="Résumé of Samoria Morris, aspiring game developer with a JavaScript browser game, plus experience in AI model QA, testing, and technical writing.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,17 +36,19 @@
                 <div class="hero-text">
                     <p class="hero-greeting">Hi, I'm</p>
                     <h1>Samoria Morris</h1>
-                    <p class="hero-role">Software Developer <span class="divider">&middot;</span> AI QA &amp; Technical Writing</p>
+                    <p class="hero-role">Aspiring Game Developer <span class="divider">&middot;</span> JavaScript &amp; QA Testing</p>
                     <p class="hero-summary">
-                        Software Developer candidate with <strong>3 years of experience</strong> in AI model QA, prompt testing,
-                        and technical documentation, bringing strong transferable experience into software
-                        development. My background includes test case design, bug reporting, model output
-                        evaluation, and collaboration with engineering teams at Handshake AI and Outlier AI.
-                        Skills include Python, JavaScript, SQL, Excel, and data analysis.
+                        Aspiring game developer and software engineering student who designed and built a
+                        <strong>browser-based action game</strong> in JavaScript, with online two-player multiplayer.
+                        I bring <strong>3 years of experience</strong> in AI model QA, test case design, bug reporting,
+                        and technical documentation from Handshake AI and Outlier AI, which carries directly into
+                        playtesting, debugging, and polishing games. Skills include JavaScript, HTML5 Canvas,
+                        TypeScript, Python, and SQL.
                     </p>
                     <p class="hero-location"><i class="fa-solid fa-location-dot"></i> Houston, TX</p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Contact Me</a>
+                        <a href="#projects" class="btn btn-primary">See My Game</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
                         <a href="https://linkedin.com/in/samoria-morris" class="btn btn-outline" target="_blank" rel="noopener">
                             <i class="fa-brands fa-linkedin"></i> LinkedIn
                         </a>
@@ -65,6 +67,17 @@
         <section id="skills" class="content-section">
             <h2 class="section-title">Skills</h2>
             <div class="skills-grid">
+                <div class="skill-card">
+                    <h3><i class="fa-solid fa-gamepad"></i> Game Development</h3>
+                    <ul class="skill-tags">
+                        <li>HTML5 Canvas</li>
+                        <li>Game Loops</li>
+                        <li>Collision Detection</li>
+                        <li>Game Balancing</li>
+                        <li>Online Multiplayer (PeerJS)</li>
+                        <li>Mobile Touch Controls</li>
+                    </ul>
+                </div>
                 <div class="skill-card">
                     <h3><i class="fa-solid fa-code"></i> Languages</h3>
                     <ul class="skill-tags">
@@ -90,6 +103,7 @@
                 <div class="skill-card">
                     <h3><i class="fa-solid fa-bug"></i> QA &amp; Documentation</h3>
                     <ul class="skill-tags">
+                        <li>Playtesting</li>
                         <li>Test Case Design</li>
                         <li>Bug Reporting</li>
                         <li>Technical Writing</li>
@@ -101,7 +115,55 @@
 
         <hr class="section-divider">
 
-        <!-- Section 3: Experience -->
+        <!-- Section 3: Projects -->
+        <section id="projects" class="content-section">
+            <h2 class="section-title">Projects</h2>
+            <article class="project-card">
+                <div class="project-gallery">
+                    <figure class="project-shot project-shot-main">
+                        <img src="game-gameplay.jpg" alt="Gameplay screenshot: a red stick-figure player aims a gun at red and purple birds flying across a blue sky">
+                        <figcaption>Gameplay: shooting birds while dodging attacks</figcaption>
+                    </figure>
+                    <figure class="project-shot">
+                        <img src="game-menu.jpg" alt="Character select screen with Red and Blue characters and buttons to host or join an online game">
+                        <figcaption>Character select and online lobby</figcaption>
+                    </figure>
+                </div>
+                <div class="project-info">
+                    <span class="goal-label">Featured Project &middot; Browser Game</span>
+                    <h3>2D Bird-Shooter Action Game</h3>
+                    <p>
+                        A fast-paced 2D shooter that runs in any browser on desktop or mobile. Players pick a
+                        character, aim and fire at waves of birds, and survive as the game gets harder.
+                    </p>
+                    <ul>
+                        <li>Built the game loop, physics, aiming, and collision detection from scratch in JavaScript on HTML5 Canvas.</li>
+                        <li>Designed difficulty that scales with score: faster birds, enraged red birds, and geese to jump or duck under.</li>
+                        <li>Added a power-up system (shields, triple ammo, rapid fire, health) and automatic gun upgrades every 1,500 points.</li>
+                        <li>Implemented online two-player matches with PeerJS (WebRTC): one player hosts and shares a 5-letter code, and both race to 7,000 points in a shared world.</li>
+                        <li>Supported keyboard and mouse plus dual on-screen joysticks for mobile, and saved high scores with localStorage.</li>
+                    </ul>
+                    <ul class="skill-tags">
+                        <li>JavaScript</li>
+                        <li>HTML5 Canvas</li>
+                        <li>CSS</li>
+                        <li>PeerJS / WebRTC</li>
+                    </ul>
+                    <div class="hero-buttons project-buttons">
+                        <a href="https://samoriam.github.io/Game/" class="btn btn-primary" target="_blank" rel="noopener">
+                            <i class="fa-solid fa-play"></i> Play the Game
+                        </a>
+                        <a href="https://github.com/Samoriam/Game" class="btn btn-outline" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Section 4: Experience -->
         <section id="experience" class="content-section">
             <h2 class="section-title">Experience</h2>
             <div class="timeline">
@@ -153,7 +215,7 @@
             </div>
         </section>
 
-        <!-- Section 4: Employment summary table -->
+        <!-- Section 5: Employment summary table -->
         <section id="summary-table" class="content-section">
             <h2 class="section-title">At a Glance</h2>
             <div class="table-wrap">
@@ -193,7 +255,7 @@
 
         <hr class="section-divider">
 
-        <!-- Section 5: Education -->
+        <!-- Section 6: Education -->
         <section id="education" class="content-section">
             <h2 class="section-title">Education</h2>
             <div class="edu-grid">
@@ -210,14 +272,14 @@
             </div>
         </section>
 
-        <!-- Section 6: Contact -->
+        <!-- Section 7: Contact -->
         <section id="contact" class="content-section">
             <h2 class="section-title">Contact</h2>
             <div class="contact-card">
                 <h4>Let's work together</h4>
                 <p>
                     <i class="fa-solid fa-envelope"></i> <a href="mailto:samoriamorris1@gmail.com">samoriamorris1@gmail.com</a><br>
-                    <i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/samoriamorris" target="_blank" rel="noopener">linkedin.com/in/samoriamorris</a><br>
+                    <i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/samoria-morris" target="_blank" rel="noopener">linkedin.com/in/samoria-morris</a><br>
                     <i class="fa-brands fa-github"></i> <a href="https://github.com/samoriam" target="_blank" rel="noopener">github.com/samoriam</a><br>
                     <i class="fa-solid fa-location-dot"></i> Houston, TX
                 </p>

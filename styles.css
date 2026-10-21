@@ -366,6 +366,73 @@ video {
     border-radius: 999px;
 }
 
+/* ===== Projects (résumé page) ===== */
+.project-card {
+    background-color: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    border-top: 4px solid var(--purple);
+    padding: 1.75rem;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.project-gallery {
+    display: grid;
+    gap: 1rem;
+}
+
+.project-shot {
+    margin: 0;
+}
+
+.project-shot img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+}
+
+.project-shot figcaption {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--muted);
+}
+
+.project-info h3 {
+    font-size: 1.3rem;
+    margin: 0.9rem 0 0.5rem;
+}
+
+.project-info p {
+    margin: 0 0 0.75rem;
+    color: var(--text);
+}
+
+.project-info > ul:not(.skill-tags) {
+    list-style: square;
+    margin: 0 0 1rem;
+    padding-left: 1.2rem;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+.project-info > ul:not(.skill-tags) li {
+    margin-bottom: 0.4rem;
+}
+
+.project-info li::marker {
+    color: var(--purple);
+}
+
+.project-buttons {
+    margin-top: 1.25rem;
+}
+
 /* ===== Experience timeline ===== */
 .timeline {
     border-left: 2px solid var(--line);
@@ -839,6 +906,7 @@ video {
 
     .about-grid,
     .media-grid,
+    .project-card,
     .form-row {
         grid-template-columns: 1fr;
     }
